@@ -1,64 +1,18 @@
-# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
+*.pyc
+*.pyo
+.venv/
 venv/
-ENV/
 env/
-.venv
-
-# Streamlit
 .streamlit/secrets.toml
-.streamlit/cache/
-.streamlit/logs/
-
-# IDE
-.vscode/
+.streamlit/config.toml
+.DS_Store
 .idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Data & Cache
+.vscode/
+*.egg-info/
+dist/
+build/
 *.json
-cache/
-data/
-*.db
-*.sqlite
-
-# Logs
-*.log
-
-# Environment
+!requirements.txt
 .env
-.env.local
-.env.*.local
-
-# OS
-Thumbs.db
-.DS_Store
-
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
+*.log
