@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "options-calc"
+version = "1.0.0"
+description = "Professional MOEX Options Calculator with Black-Scholes model"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+keywords = ["options", "moex", "black-scholes", "trading", "calculator"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.37.0",
+    "pandas>=2.2.0",
+    "numpy>=1.24.3",
+    "plotly>=5.18.0",
+    "requests>=2.31.0",
+    "python-dateutil>=2.8.2",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.7.0",
+]
+prod = [
+    "sentry-sdk>=1.39.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/options_calc"
+Repository = "https://github.com/yourusername/options_calc.git"
+Issues = "https://github.com/yourusername/options_calc/issues"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
